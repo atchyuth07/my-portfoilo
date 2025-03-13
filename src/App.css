@@ -1,0 +1,190 @@
+/* General Reset and Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f5f7;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container Styling */
+.App {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1100px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: #3498db;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #2980b9;
+}
+
+/* Header Section */
+.App-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.App-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+/* Collapsible Section Styling */
+.collapsible {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2c3e50;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 2px solid #3498db;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.collapsible:hover {
+  color: #1abc9c;
+}
+
+section .content {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  .App-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .App-header h2 {
+    font-size: 1.4rem;
+  }
+
+  section h3 {
+    font-size: 1.6rem;
+  }
+
+  ul li {
+    font-size: 1.1rem;
+  }
+
+  .navbar a {
+    padding: 8px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 15px;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .App-header h2 {
+    font-size: 1.2rem;
+  }
+
+  section h3 {
+    font-size: 1.4rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  .navbar a {
+    padding: 8px 10px;
+  }
+}
